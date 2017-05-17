@@ -56,6 +56,10 @@ public class Main extends Activity
     @Override
     public void onCreate(Bundle savedInstanceState) 
     {
+    
+    MobileCenter.start(getApplication(), "d32917b7-a111-4734-aa6e-97a91e7451e8",
+                   Analytics.class, Crashes.class);
+    
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
         
